@@ -7,7 +7,6 @@ class TkPopup:
         self.queue = []
     def window_queue(self):
         while True:
-            indexes_to_remove = []
             for window in self.queue:
                 root = Tk()
                 root.resizable(width=0, height=0)
