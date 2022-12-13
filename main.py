@@ -17,7 +17,7 @@ class TkPopup:
                 name = Label(root, text='New Announcement from {}\n{}'.format(window[0], window[1]))
                 name.pack(pady=1)
                 root.mainloop()
-                self.queue.pop(index)
+                self.queue.pop(0)
             time.sleep(1)
 
 tk = TkPopup()
